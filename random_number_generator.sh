@@ -6,9 +6,10 @@ read minimum
 echo "Enter the maximum value:"
 read maximum
 
-if $minimum > $maximum
-    then echo "That doesn't work retard"
+if [[ $minimum > $maximum ]];
+    then echo "Error 69: not enough brain cells"
 fi
+exit
 
 randomNumber=$(($minimum + $RANDOM % $maximum))
 
