@@ -9,7 +9,6 @@ read maximum
 if [[ $minimum > $maximum ]];
     then echo "Error 69: not enough brain cells"
 fi
-exit
 
 randomNumber=$(($minimum + $RANDOM % $maximum))
 
